@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ferramentas",
+      "handler": "ferramenta.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ferramentas/count",
+      "handler": "ferramenta.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ferramentas/:id",
+      "handler": "ferramenta.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ferramentas",
+      "handler": "ferramenta.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ferramentas/:id",
+      "handler": "ferramenta.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ferramentas/:id",
+      "handler": "ferramenta.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

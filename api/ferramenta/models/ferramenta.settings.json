@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ferramentas",
+  "info": {
+    "name": "Ferramenta",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": false
+    },
+    "link": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "src": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "color": {
+      "type": "string",
+      "required": true,
+      "unique": false,
+      "default": "white"
+    }
+  }
+}
